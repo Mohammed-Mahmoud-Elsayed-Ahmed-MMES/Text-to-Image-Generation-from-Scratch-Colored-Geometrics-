@@ -14,11 +14,9 @@ Unlike naive approaches that memorize exact (image, caption) pairs, this impleme
 ## Repository Structure
 
 ```
-├── 1_generate_dataset.py      # Generate 2,000+ unique shape-color combinations
-├── 2_train_model.py           # Train with compositional validation split
-├── 3_generate_image.py        # Generate + test compositional generalization
-├── generate.bat               # Windows launcher
-├── generate.ps1               # PowerShell launcher
+├── generate_dataset.py      # Generate 2,000+ unique shape-color combinations
+├── train_model.py           # Train with compositional validation split
+├── generate_image.py        # Generate + test compositional generalization
 ├── README.md                  # This file
 ├── shapes_dataset/            # Generated dataset (or download from Kaggle)
 │   ├── train/
