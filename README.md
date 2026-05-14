@@ -100,19 +100,19 @@ python 2_train_model.py --data_dir ./shapes_dataset --epochs 100 --patience 20
 
 ```bash
 # Basic generation (seen combination)
-python 3_generate_image.py --prompt "a red circle" --model ./checkpoints/best_model.pt
+python generate_image.py --prompt "a red circle" --model ./checkpoints/best_model.pt
 
 # Test compositional generalization (unseen combination)
-python 3_generate_image.py --prompt "a maroon circle" --model ./checkpoints/best_model.pt
+python generate_image.py --prompt "a maroon circle" --model ./checkpoints/best_model.pt
 
 # Batch test on held-out validation combinations
-python 3_generate_image.py --test_compositional --data_dir ./shapes_dataset --model ./checkpoints/best_model.pt
+python generate_image.py --test_compositional --data_dir ./shapes_dataset --model ./checkpoints/best_model.pt
 
 # Compare best vs final model
-python 3_generate_image.py --compare --prompt "a teal square"
+python generate_image.py --compare --prompt "a teal square"
 
 # Grid of multiple prompts
-python 3_generate_image.py --prompts "red circle" "maroon circle" "teal square" "crimson heart" --grid --output test_grid.png
+python generate_image.py --prompts "red circle" "maroon circle" "teal square" "crimson heart" --grid --output test_grid.png
 ```
 
 ## Model Architecture
